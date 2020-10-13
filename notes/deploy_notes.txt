@@ -1,0 +1,5 @@
+Use the following commands within the Azure CLI (local desktop application) to upload the service:
+az login
+py -3 -m venv env
+env\scripts\activate
+az webapp up

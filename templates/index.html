@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap/bootstrap.min.css') }}">
+</head>
+
+<body>
+   <div class="row">
+      <div class="col-md-10 col-md-offset-1">
+         <h1>Make my web address short</h1><br /><br />
+      </div>
+   </div>
+   <div class="col-md-6 col-md-offset-3">
+      <form action="/short" method="post" class="form-inline">
+         <div class="form-group">
+            <label for="address">Address to shorten:</label> <input type="text" size="40" name="address" id="address" class="form-control" placeholder="https://" required />
+            <input type="submit" name="submit" id="submit" class="btn btn-primary" />
+         </div>
+      </form>
+   </div>
+</body>
+</html>

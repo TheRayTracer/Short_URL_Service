@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap/bootstrap.min.css') }}">
+</head>
+
+<body>
+   <div class="row">
+      <div class="col-md-10 col-md-offset-1">
+         <h1>Your short address statistics</h1><br /><br />
+      </div>
+   </div>
+   <div class="row">
+      <div class="col-md-10 col-md-offset-1">
+         <table>
+            <tr><td>Original address:</td><td><a href="{{ original }}">{{ original }}</a></td></tr>
+            <tr><td>Short address:</td><td><a href="{{ base }}go/{{ slug }}">{{ base }}go/{{ slug }}</a></td></tr>
+            <tr><td>Visits:</td><td>{{ visits }}</td></tr>
+         </table>
+      </div>
+   </div>
+</body>
+</html>

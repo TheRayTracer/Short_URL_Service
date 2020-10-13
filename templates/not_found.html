@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap/bootstrap.min.css') }}">
+</head>
+
+<body>
+   <div class="row">
+      <div class="col-md-10 col-md-offset-1">
+         <h1>Short address not found</h1><br /><br />
+      </div>
+   </div>
+   <div class="row">
+      <div class="col-md-10 col-md-offset-1">
+         <table>
+            <tr><td>Short address:</td><td><a href="{{ base }}go/{{ slug }}">{{ base }}go/{{ slug }}</a></td></tr>
+         </table>
+      </div>
+   </div>
+</body>
+</html>
